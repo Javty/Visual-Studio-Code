@@ -6,7 +6,12 @@ import random
 
 
 def said_hi():
-    # Use a breakpoint in the code line below to debug your script
+    """ 
+    A function that ask your name, and said hello
+
+    Returns:
+    Name
+    """
     print("Hi ¿What is your name?")
     name = input()
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
@@ -33,17 +38,26 @@ class Person:
     def introduce(self):
         print(f"my name is {self.firstname} {self.lastname} I am  {self.age} my status is {self.status}")
 
+def favorite():
+    """ 
+    A function that checks if the user cans guess my favorite food
 
-Maria = Person(said_hi(), "Chavez", 90, True)
-Toy = Dog("toby", "ball")
-numbers = [1, 2, 3, 4, 5]
-random.shuffle(numbers)
-print(numbers)
+    Returns:
+    None
+    """
+    guess_food = input(print("What's my favorite food?"))
+    if guess_food.lower() == "pizza":
+        print("Yep! So amazing!")
+    else:
+        print("Tuck! That's not it!")
+    print("Thanks! for playing!")
+    
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    # said_hi()
+    Maria = Person(said_hi(), "Chavez", 90, True)
     Maria.introduce()
+    Toy = Dog("toby", "ball")
     Toy.play()
-
+    favorite()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
