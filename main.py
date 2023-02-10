@@ -1,9 +1,16 @@
 # import modules
 import random
+import unittest
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 # Function
 
+class TestFavoriteCity(unittest.TestCase):
+    def test_favorite_city(self):
+        #Test the function with three diferents cities
+        self.assertEqual(favorite_city("New York"), "One of my favorite cities is New York")
+        self.assertEqual(favorite_city("Sahuayo"), "One of my favorite cities is Sahuayo")
+        self.assertEqual(favorite_city("City"), "One of my favorite cities is City")
 
 def said_hi():
     """ 
@@ -51,13 +58,31 @@ def favorite():
     else:
         print("Tuck! That's not it!")
     print("Thanks! for playing!")
+
+def favorite_city(name):
+    """
+    Summary:
+        this function receives and string representing a city name and returna message about that this is his favorite city
+
+    Args:
+        name (str): The name of the city 
+
+    Returns:
+        str: the message indiccating that the city is one of the user's
+
+    Example:
+        favorite_city("Sahuayo")
+        Outuput: One of my favorite cities is Sahuayo
+    """
+    return "One of my favorite cities is " + name
     
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    Maria = Person(said_hi(), "Chavez", 90, True)
-    Maria.introduce()
-    Toy = Dog("toby", "ball")
-    Toy.play()
-    favorite()
+    #Maria = Person(said_hi(), "Chavez", 90, True)
+    #Maria.introduce()
+    #Toy = Dog("toby", "ball")
+    #Toy.play()
+    #favorite()
+    unittest.main()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
