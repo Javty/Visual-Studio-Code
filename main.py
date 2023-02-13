@@ -1,6 +1,7 @@
 # import modules
 import random
 import unittest
+import collections
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 # Function
@@ -75,6 +76,7 @@ def favorite_city(name):
         Outuput: One of my favorite cities is Sahuayo
     """
     return "One of my favorite cities is " + name
+
     
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -83,6 +85,8 @@ if __name__ == '__main__':
     #Toy = Dog("toby", "ball")
     #Toy.play()
     #favorite()
-    unittest.main()
+    #unittest.main()
+    collections
+
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
